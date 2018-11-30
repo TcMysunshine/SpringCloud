@@ -7,9 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Eurake" />
-        <module name="eurake-client" />
         <module name="eurake-server" />
+        <module name="eureka-client" />
+        <module name="eureka-consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eurake-client-A" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
