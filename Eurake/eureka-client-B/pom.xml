@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.chenhao</groupId>
-	<artifactId>eurakeserver</artifactId>
+	<artifactId>eureka-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>eurake-server</name>
+	<name>eureka-client-B</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -36,11 +36,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--lombook-->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
 		</dependency>
-	</dependencies>
+		<!--zuul-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+        </dependency>
+    </dependencies>
 
 	<dependencyManagement>
 		<dependencies>
@@ -59,9 +67,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<mainClass>com.chenhao.eurakeserver.EurakeserverApplication</mainClass>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
